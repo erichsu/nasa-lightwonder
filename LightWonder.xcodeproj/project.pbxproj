@@ -14,6 +14,9 @@
 		27AFDD681EB2454E00CCFD1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27AFDD661EB2454E00CCFD1C /* LaunchScreen.storyboard */; };
 		27AFDD731EB2454E00CCFD1C /* LightWonderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFDD721EB2454E00CCFD1C /* LightWonderTests.swift */; };
 		27AFDD7E1EB2454F00CCFD1C /* LightWonderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFDD7D1EB2454F00CCFD1C /* LightWonderUITests.swift */; };
+		8AE396272AFCB2E0BB9942E4 /* Pods_LightWonderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A815E05ECC9FB9312D6CB44 /* Pods_LightWonderTests.framework */; };
+		E73E003D3D7127761A28C2C2 /* Pods_LightWonderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429CC5718C19018F0A500905 /* Pods_LightWonderUITests.framework */; };
+		F501344D019D2F7CD4BAC61B /* Pods_LightWonder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52747A665F6EB56CDF0102BA /* Pods_LightWonder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		166DB99B11BBAA9552737936 /* Pods-LightWonder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightWonder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LightWonder/Pods-LightWonder.debug.xcconfig"; sourceTree = "<group>"; };
+		240455726256A4B54F060B80 /* Pods-LightWonder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightWonder.release.xcconfig"; path = "Pods/Target Support Files/Pods-LightWonder/Pods-LightWonder.release.xcconfig"; sourceTree = "<group>"; };
 		27AFDD5A1EB2454E00CCFD1C /* LightWonder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightWonder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27AFDD5D1EB2454E00CCFD1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27AFDD5F1EB2454E00CCFD1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,13 @@
 		27AFDD791EB2454E00CCFD1C /* LightWonderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightWonderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27AFDD7D1EB2454F00CCFD1C /* LightWonderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightWonderUITests.swift; sourceTree = "<group>"; };
 		27AFDD7F1EB2454F00CCFD1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A815E05ECC9FB9312D6CB44 /* Pods_LightWonderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightWonderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		429CC5718C19018F0A500905 /* Pods_LightWonderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightWonderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52747A665F6EB56CDF0102BA /* Pods_LightWonder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightWonder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DF1EC77E6CDEBEE4327E1BA /* Pods-LightWonderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightWonderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LightWonderUITests/Pods-LightWonderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BD4E2E5EBB4D4A166DF03058 /* Pods-LightWonderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightWonderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LightWonderTests/Pods-LightWonderTests.release.xcconfig"; sourceTree = "<group>"; };
+		C76EDECFB42EA4567631B3DD /* Pods-LightWonderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightWonderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LightWonderUITests/Pods-LightWonderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7417D8A8ACC15A84A979C1E /* Pods-LightWonderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightWonderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LightWonderTests/Pods-LightWonderTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F501344D019D2F7CD4BAC61B /* Pods_LightWonder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AE396272AFCB2E0BB9942E4 /* Pods_LightWonderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E73E003D3D7127761A28C2C2 /* Pods_LightWonderUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				27AFDD711EB2454E00CCFD1C /* LightWonderTests */,
 				27AFDD7C1EB2454F00CCFD1C /* LightWonderUITests */,
 				27AFDD5B1EB2454E00CCFD1C /* Products */,
+				35B29B04B0B47EEB71DFB5A6 /* Pods */,
+				477B6125B076145ED1F87C5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = LightWonderUITests;
 			sourceTree = "<group>";
 		};
+		35B29B04B0B47EEB71DFB5A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				166DB99B11BBAA9552737936 /* Pods-LightWonder.debug.xcconfig */,
+				240455726256A4B54F060B80 /* Pods-LightWonder.release.xcconfig */,
+				E7417D8A8ACC15A84A979C1E /* Pods-LightWonderTests.debug.xcconfig */,
+				BD4E2E5EBB4D4A166DF03058 /* Pods-LightWonderTests.release.xcconfig */,
+				C76EDECFB42EA4567631B3DD /* Pods-LightWonderUITests.debug.xcconfig */,
+				6DF1EC77E6CDEBEE4327E1BA /* Pods-LightWonderUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		477B6125B076145ED1F87C5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52747A665F6EB56CDF0102BA /* Pods_LightWonder.framework */,
+				2A815E05ECC9FB9312D6CB44 /* Pods_LightWonderTests.framework */,
+				429CC5718C19018F0A500905 /* Pods_LightWonderUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27AFDD821EB2454F00CCFD1C /* Build configuration list for PBXNativeTarget "LightWonder" */;
 			buildPhases = (
+				9CAFC4ADDF6BC5116615CC7C /* [CP] Check Pods Manifest.lock */,
 				27AFDD561EB2454E00CCFD1C /* Sources */,
 				27AFDD571EB2454E00CCFD1C /* Frameworks */,
 				27AFDD581EB2454E00CCFD1C /* Resources */,
+				3D209C42D2264C3F3A0D8E1D /* [CP] Embed Pods Frameworks */,
+				0065F50FC2FA4474A102FC6C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27AFDD851EB2454F00CCFD1C /* Build configuration list for PBXNativeTarget "LightWonderTests" */;
 			buildPhases = (
+				E6D388B88550B97B74CE4961 /* [CP] Check Pods Manifest.lock */,
 				27AFDD6A1EB2454E00CCFD1C /* Sources */,
 				27AFDD6B1EB2454E00CCFD1C /* Frameworks */,
 				27AFDD6C1EB2454E00CCFD1C /* Resources */,
+				67434B9F57EB61F34DEC2582 /* [CP] Embed Pods Frameworks */,
+				E066C533F6C38EA55A30CC0A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27AFDD881EB2454F00CCFD1C /* Build configuration list for PBXNativeTarget "LightWonderUITests" */;
 			buildPhases = (
+				E1F8A7BD03A864C1BCE89131 /* [CP] Check Pods Manifest.lock */,
 				27AFDD751EB2454E00CCFD1C /* Sources */,
 				27AFDD761EB2454E00CCFD1C /* Frameworks */,
 				27AFDD771EB2454E00CCFD1C /* Resources */,
+				B9E58BACB3E5D8BBB334505F /* [CP] Embed Pods Frameworks */,
+				D5167F60A12C041C501B8CEE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +305,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0065F50FC2FA4474A102FC6C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LightWonder/Pods-LightWonder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D209C42D2264C3F3A0D8E1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LightWonder/Pods-LightWonder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67434B9F57EB61F34DEC2582 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LightWonderTests/Pods-LightWonderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CAFC4ADDF6BC5116615CC7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B9E58BACB3E5D8BBB334505F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LightWonderUITests/Pods-LightWonderUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5167F60A12C041C501B8CEE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LightWonderUITests/Pods-LightWonderUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E066C533F6C38EA55A30CC0A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LightWonderTests/Pods-LightWonderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1F8A7BD03A864C1BCE89131 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E6D388B88550B97B74CE4961 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		27AFDD561EB2454E00CCFD1C /* Sources */ = {
@@ -415,6 +602,7 @@
 		};
 		27AFDD831EB2454F00CCFD1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 166DB99B11BBAA9552737936 /* Pods-LightWonder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 66D3CJTRN4;
@@ -428,6 +616,7 @@
 		};
 		27AFDD841EB2454F00CCFD1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 240455726256A4B54F060B80 /* Pods-LightWonder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 66D3CJTRN4;
@@ -441,6 +630,7 @@
 		};
 		27AFDD861EB2454F00CCFD1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7417D8A8ACC15A84A979C1E /* Pods-LightWonderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +646,7 @@
 		};
 		27AFDD871EB2454F00CCFD1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD4E2E5EBB4D4A166DF03058 /* Pods-LightWonderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +662,7 @@
 		};
 		27AFDD891EB2454F00CCFD1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C76EDECFB42EA4567631B3DD /* Pods-LightWonderUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 66D3CJTRN4;
@@ -485,6 +677,7 @@
 		};
 		27AFDD8A1EB2454F00CCFD1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DF1EC77E6CDEBEE4327E1BA /* Pods-LightWonderUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 66D3CJTRN4;
