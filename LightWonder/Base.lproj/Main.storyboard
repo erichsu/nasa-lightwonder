@@ -6,8 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontAwesome.ttf">
+            <string>FontAwesome</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -21,27 +27,179 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RaM-As-Thd">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RaM-As-Thd">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Isy-Pb-kz4"/>
+                                </connections>
                             </mapView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wqZ-bH-itY">
-                                <rect key="frame" x="0.0" y="20" width="375" height="195"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mJg-b8-WJA">
+                                <rect key="frame" x="0.0" y="539" width="375" height="128"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8mJ-hN-50Y">
+                                        <rect key="frame" x="6" y="49" width="363" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="gMa-9v-2m1"/>
+                                        </constraints>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9am, Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXL-in-3El">
+                                        <rect key="frame" x="8" y="20" width="359" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="zeH-YT-xqW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="195" id="AjD-Q0-ajh"/>
+                                    <constraint firstItem="8mJ-hN-50Y" firstAttribute="top" secondItem="mXL-in-3El" secondAttribute="bottom" constant="8" id="8uQ-wR-EIw"/>
+                                    <constraint firstAttribute="trailing" secondItem="mXL-in-3El" secondAttribute="trailing" constant="8" id="B0x-hE-h5f"/>
+                                    <constraint firstAttribute="height" constant="128" id="EIp-MP-05b"/>
+                                    <constraint firstItem="mXL-in-3El" firstAttribute="leading" secondItem="mJg-b8-WJA" secondAttribute="leading" constant="8" id="UK8-fu-fCU"/>
+                                    <constraint firstItem="8mJ-hN-50Y" firstAttribute="leading" secondItem="mJg-b8-WJA" secondAttribute="leading" constant="8" id="Zuq-Jp-DGg"/>
+                                    <constraint firstAttribute="trailing" secondItem="8mJ-hN-50Y" secondAttribute="trailing" constant="8" id="gis-os-3aI"/>
+                                    <constraint firstItem="mXL-in-3El" firstAttribute="top" secondItem="mJg-b8-WJA" secondAttribute="top" constant="20" id="q7V-AD-zbe"/>
                                 </constraints>
-                            </imageView>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O9H-MI-ukf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="195"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wqZ-bH-itY">
+                                        <rect key="frame" x="217" y="47" width="150" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="JJ0-IK-PKD"/>
+                                            <constraint firstAttribute="height" constant="100" id="bfg-er-ASy"/>
+                                        </constraints>
+                                    </imageView>
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" text="Florida" placeholder="Florida" translatesAutoresizingMaskIntoConstraints="NO" id="eJo-km-8Bx">
+                                        <rect key="frame" x="0.0" y="8" width="216" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="JWf-wm-2KX"/>
+                                            <constraint firstAttribute="width" constant="216" id="onr-yn-6lT"/>
+                                        </constraints>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QDa-Y4-AaP">
+                                        <rect key="frame" x="8" y="60" width="263.5" height="20.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YK9-uq-utl" customClass="SwiftIconLabel" customModule="SwiftIconFont">
+                                                <rect key="frame" x="0.0" y="0.0" width="115.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="Icon" value="fa:thermometer"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2k-2h-vTO">
+                                                <rect key="frame" x="125.5" y="0.0" width="20.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4P6-Ph-z0g" customClass="SwiftIconLabel" customModule="SwiftIconFont">
+                                                <rect key="frame" x="156" y="0.0" width="17" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="Icon" value="ma:beach.access"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Lv2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FV-By-aRg">
+                                                <rect key="frame" x="183" y="0.0" width="27" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bm-kY-xay" customClass="SwiftIconLabel" customModule="SwiftIconFont">
+                                                <rect key="frame" x="220" y="0.0" width="10" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="Icon" value="fa:tint"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJm-Ve-eQg">
+                                                <rect key="frame" x="240" y="0.0" width="23.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.51372549020000002" green="0.7843137255" blue="0.7843137255" alpha="0.516175176056338" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="wqZ-bH-itY" firstAttribute="centerY" secondItem="O9H-MI-ukf" secondAttribute="centerY" id="DVc-Ro-3IJ"/>
+                                    <constraint firstAttribute="height" constant="195" id="UVr-QC-fsv"/>
+                                    <constraint firstAttribute="trailing" secondItem="wqZ-bH-itY" secondAttribute="trailing" constant="8" id="hNd-y4-mkA"/>
+                                    <constraint firstItem="eJo-km-8Bx" firstAttribute="leading" secondItem="O9H-MI-ukf" secondAttribute="leading" id="iFW-2J-UKE"/>
+                                    <constraint firstItem="eJo-km-8Bx" firstAttribute="top" secondItem="O9H-MI-ukf" secondAttribute="top" constant="8" id="uc7-My-4ML"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqb-XR-2yc" customClass="SwiftIconButton" customModule="SwiftIconFont">
+                                <rect key="frame" x="31" y="200" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Nrb-UC-bpv"/>
+                                    <constraint firstAttribute="height" constant="30" id="lGc-1m-ozG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="25"/>
+                                <state key="normal" title="fa:map-marker"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="Icon" value="fa:map-marker"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ww3-p1-TJc" customClass="SwiftIconButton" customModule="SwiftIconFont">
+                                <rect key="frame" x="76" y="200" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="QDq-bb-V5W"/>
+                                    <constraint firstAttribute="height" constant="30" id="YvB-rJ-H8N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="fa:lightbulb-o"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="Icon" value="fa:lightbulb-o"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wqZ-bH-itY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7MH-ao-xsV"/>
+                            <constraint firstItem="ww3-p1-TJc" firstAttribute="top" secondItem="O9H-MI-ukf" secondAttribute="bottom" constant="-15" id="6TE-63-L6b"/>
                             <constraint firstItem="RaM-As-Thd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ACP-9H-t9T"/>
+                            <constraint firstItem="O9H-MI-ukf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="D7p-Ch-BiL"/>
+                            <constraint firstItem="mJg-b8-WJA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="E20-h0-ok8"/>
+                            <constraint firstItem="O9H-MI-ukf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="En0-0k-ZKx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mJg-b8-WJA" secondAttribute="bottom" id="Ksm-zf-X5k"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RaM-As-Thd" secondAttribute="bottom" id="Mnn-yv-bt4"/>
                             <constraint firstAttribute="trailing" secondItem="RaM-As-Thd" secondAttribute="trailing" id="OJa-LV-HFP"/>
-                            <constraint firstItem="wqZ-bH-itY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OZB-Il-a6d"/>
-                            <constraint firstAttribute="trailing" secondItem="wqZ-bH-itY" secondAttribute="trailing" id="P5g-LB-pCE"/>
+                            <constraint firstItem="ww3-p1-TJc" firstAttribute="leading" secondItem="xqb-XR-2yc" secondAttribute="trailing" constant="15" id="Sds-Kf-Qoo"/>
+                            <constraint firstAttribute="trailing" secondItem="mJg-b8-WJA" secondAttribute="trailing" id="epp-4w-2NI"/>
+                            <constraint firstAttribute="trailing" secondItem="O9H-MI-ukf" secondAttribute="trailing" id="lA8-1X-rQG"/>
                             <constraint firstItem="RaM-As-Thd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lWq-Os-SOs"/>
+                            <constraint firstItem="xqb-XR-2yc" firstAttribute="top" secondItem="O9H-MI-ukf" secondAttribute="bottom" constant="-15" id="tez-mZ-tSn"/>
+                            <constraint firstItem="xqb-XR-2yc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="v39-6r-JVe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="humidityLabel" destination="jJm-Ve-eQg" id="u9W-pc-nxC"/>
+                        <outlet property="mapView" destination="RaM-As-Thd" id="FoG-Ag-ldr"/>
+                        <outlet property="temperatureLabel" destination="H2k-2h-vTO" id="Sps-RP-D10"/>
+                        <outlet property="waveLabel" destination="1FV-By-aRg" id="9VL-n0-SM6"/>
+                        <outlet property="weatherImage" destination="wqZ-bH-itY" id="myH-WU-XnD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
