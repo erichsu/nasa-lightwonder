@@ -3,6 +3,8 @@ PODS:
   - Charts (3.0.2):
     - Charts/Core (= 3.0.2)
   - Charts/Core (3.0.2)
+  - Floaty (3.0.0)
+  - Hero (0.3.6)
   - IQKeyboardManagerSwift (4.0.9)
   - JASON (3.1)
   - Kingfisher (3.6.2)
@@ -10,6 +12,7 @@ PODS:
     - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
   - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
   - PKHUD (4.2.1)
+  - SideMenu (2.3.2)
   - SwiftIconFont (2.6.0)
   - SwiftMessages (3.3.3)
   - XCGLogger (5.0.1):
@@ -20,10 +23,13 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - Charts
+  - Floaty
+  - Hero
   - IQKeyboardManagerSwift
   - JASON
   - Kingfisher
   - PKHUD
+  - SideMenu
   - SwiftIconFont
   - SwiftMessages
   - XCGLogger
@@ -31,15 +37,18 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
+  Floaty: d1be5d323094f0de422bb615452d00ba26ac74dd
+  Hero: d3c6f4dd80cdcdbb339be64e57ae3b5c3ab9938c
   IQKeyboardManagerSwift: 2eefe6c429b86aa08bfbc1b5c891164d754adf91
   JASON: c1204b01c9979eef35b6948ca939aac5e7bef081
   Kingfisher: 2c94e72c6830622c71d06adf4ea024c37d316830
   ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
   PKHUD: 957ce2a68b3c97a51839b30216120c1dbc0c3a78
+  SideMenu: 3fa07dd05d4bade2b6f9889fb1877e312e1ba319
   SwiftIconFont: bbe1f32e1e16bac87dad8566afc80132cb8d072c
   SwiftMessages: 09cea3336e3fb63c3578983c8aac65acaa6d884a
   XCGLogger: 0b43697155d41e4a1b15fc776f319c2141646b09
 
-PODFILE CHECKSUM: 6bfec859b49b90cd0ee0def8373bca744f26cd5c
+PODFILE CHECKSUM: df6485fda28099c46f8b905e07be58bd913658c2
 
 COCOAPODS: 1.2.0

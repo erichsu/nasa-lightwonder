@@ -15,6 +15,18 @@
 		27AFDD731EB2454E00CCFD1C /* LightWonderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFDD721EB2454E00CCFD1C /* LightWonderTests.swift */; };
 		27AFDD7E1EB2454F00CCFD1C /* LightWonderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFDD7D1EB2454F00CCFD1C /* LightWonderUITests.swift */; };
 		27AFDD8D1EB257AE00CCFD1C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AFDD8B1EB2562800CCFD1C /* MapKit.framework */; };
+		27D3947C1EB44F65005A228A /* Weather.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D3947B1EB44F65005A228A /* Weather.xcassets */; };
+		27D3947F1EB45CC8005A228A /* DateCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D3947E1EB45CC8005A228A /* DateCollectionCell.swift */; };
+		27D394811EB4C6F7005A228A /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D394801EB4C6F7005A228A /* InfoViewController.swift */; };
+		27D394831EB4EF8F005A228A /* InfoCard.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D394821EB4EF8F005A228A /* InfoCard.xcassets */; };
+		27D394851EB4F200005A228A /* InfoCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D394841EB4F200005A228A /* InfoCardCell.swift */; };
+		27D394871EB5114D005A228A /* DetailCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27D394861EB5114D005A228A /* DetailCard.xib */; };
+		27D394891EB51588005A228A /* DetailCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D394881EB51588005A228A /* DetailCard.swift */; };
+		27D3948B1EB5415A005A228A /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D3948A1EB5415A005A228A /* SearchFooter.swift */; };
+		27D3948D1EB5418C005A228A /* SearchFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27D3948C1EB5418C005A228A /* SearchFooter.xib */; };
+		27D3948F1EB542A3005A228A /* Search.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D3948E1EB542A3005A228A /* Search.xcassets */; };
+		27D394911EB558FB005A228A /* DetailCardAlgae.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27D394901EB558FB005A228A /* DetailCardAlgae.xib */; };
+		27D394931EB5593C005A228A /* DetailCardUV.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27D394921EB5593C005A228A /* DetailCardUV.xib */; };
 		8AE396272AFCB2E0BB9942E4 /* Pods_LightWonderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A815E05ECC9FB9312D6CB44 /* Pods_LightWonderTests.framework */; };
 		E73E003D3D7127761A28C2C2 /* Pods_LightWonderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429CC5718C19018F0A500905 /* Pods_LightWonderUITests.framework */; };
 		F501344D019D2F7CD4BAC61B /* Pods_LightWonder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52747A665F6EB56CDF0102BA /* Pods_LightWonder.framework */; };
@@ -55,6 +67,18 @@
 		27AFDD7F1EB2454F00CCFD1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27AFDD8B1EB2562800CCFD1C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		27AFDD8E1EB257F300CCFD1C /* LightWonder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LightWonder.entitlements; sourceTree = "<group>"; };
+		27D3947B1EB44F65005A228A /* Weather.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Weather.xcassets; sourceTree = "<group>"; };
+		27D3947E1EB45CC8005A228A /* DateCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateCollectionCell.swift; path = Views/DateCollectionCell.swift; sourceTree = "<group>"; };
+		27D394801EB4C6F7005A228A /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		27D394821EB4EF8F005A228A /* InfoCard.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = InfoCard.xcassets; sourceTree = "<group>"; };
+		27D394841EB4F200005A228A /* InfoCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoCardCell.swift; path = Views/InfoCardCell.swift; sourceTree = "<group>"; };
+		27D394861EB5114D005A228A /* DetailCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailCard.xib; path = Views/DetailCard.xib; sourceTree = "<group>"; };
+		27D394881EB51588005A228A /* DetailCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailCard.swift; path = Views/DetailCard.swift; sourceTree = "<group>"; };
+		27D3948A1EB5415A005A228A /* SearchFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchFooter.swift; path = Views/SearchFooter.swift; sourceTree = "<group>"; };
+		27D3948C1EB5418C005A228A /* SearchFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchFooter.xib; path = Views/SearchFooter.xib; sourceTree = "<group>"; };
+		27D3948E1EB542A3005A228A /* Search.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Search.xcassets; sourceTree = "<group>"; };
+		27D394901EB558FB005A228A /* DetailCardAlgae.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailCardAlgae.xib; sourceTree = "<group>"; };
+		27D394921EB5593C005A228A /* DetailCardUV.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailCardUV.xib; path = Views/DetailCardUV.xib; sourceTree = "<group>"; };
 		2A815E05ECC9FB9312D6CB44 /* Pods_LightWonderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightWonderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		429CC5718C19018F0A500905 /* Pods_LightWonderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightWonderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52747A665F6EB56CDF0102BA /* Pods_LightWonder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightWonder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,11 +142,16 @@
 		27AFDD5C1EB2454E00CCFD1C /* LightWonder */ = {
 			isa = PBXGroup;
 			children = (
+				27D3947D1EB45C9D005A228A /* Views */,
 				27AFDD8E1EB257F300CCFD1C /* LightWonder.entitlements */,
 				27AFDD5D1EB2454E00CCFD1C /* AppDelegate.swift */,
 				27AFDD5F1EB2454E00CCFD1C /* ViewController.swift */,
+				27D394801EB4C6F7005A228A /* InfoViewController.swift */,
 				27AFDD611EB2454E00CCFD1C /* Main.storyboard */,
 				27AFDD641EB2454E00CCFD1C /* Assets.xcassets */,
+				27D3947B1EB44F65005A228A /* Weather.xcassets */,
+				27D394821EB4EF8F005A228A /* InfoCard.xcassets */,
+				27D3948E1EB542A3005A228A /* Search.xcassets */,
 				27AFDD661EB2454E00CCFD1C /* LaunchScreen.storyboard */,
 				27AFDD691EB2454E00CCFD1C /* Info.plist */,
 			);
@@ -145,6 +174,21 @@
 				27AFDD7F1EB2454F00CCFD1C /* Info.plist */,
 			);
 			path = LightWonderUITests;
+			sourceTree = "<group>";
+		};
+		27D3947D1EB45C9D005A228A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27D3947E1EB45CC8005A228A /* DateCollectionCell.swift */,
+				27D394841EB4F200005A228A /* InfoCardCell.swift */,
+				27D394881EB51588005A228A /* DetailCard.swift */,
+				27D394861EB5114D005A228A /* DetailCard.xib */,
+				27D394921EB5593C005A228A /* DetailCardUV.xib */,
+				27D394901EB558FB005A228A /* DetailCardAlgae.xib */,
+				27D3948A1EB5415A005A228A /* SearchFooter.swift */,
+				27D3948C1EB5418C005A228A /* SearchFooter.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		35B29B04B0B47EEB71DFB5A6 /* Pods */ = {
@@ -301,8 +345,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D3948D1EB5418C005A228A /* SearchFooter.xib in Resources */,
+				27D3948F1EB542A3005A228A /* Search.xcassets in Resources */,
+				27D3947C1EB44F65005A228A /* Weather.xcassets in Resources */,
+				27D394931EB5593C005A228A /* DetailCardUV.xib in Resources */,
+				27D394831EB4EF8F005A228A /* InfoCard.xcassets in Resources */,
 				27AFDD681EB2454E00CCFD1C /* LaunchScreen.storyboard in Resources */,
 				27AFDD651EB2454E00CCFD1C /* Assets.xcassets in Resources */,
+				27D394871EB5114D005A228A /* DetailCard.xib in Resources */,
+				27D394911EB558FB005A228A /* DetailCardAlgae.xib in Resources */,
 				27AFDD631EB2454E00CCFD1C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,7 +517,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D394891EB51588005A228A /* DetailCard.swift in Sources */,
+				27D3948B1EB5415A005A228A /* SearchFooter.swift in Sources */,
+				27D3947F1EB45CC8005A228A /* DateCollectionCell.swift in Sources */,
 				27AFDD601EB2454E00CCFD1C /* ViewController.swift in Sources */,
+				27D394851EB4F200005A228A /* InfoCardCell.swift in Sources */,
+				27D394811EB4C6F7005A228A /* InfoViewController.swift in Sources */,
 				27AFDD5E1EB2454E00CCFD1C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,7 +619,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -608,7 +664,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -626,7 +682,7 @@
 				DEVELOPMENT_TEAM = 66D3CJTRN4;
 				INFOPLIST_FILE = LightWonder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.nasa.LightWonder;
+				PRODUCT_BUNDLE_IDENTIFIER = org.lightwonder.SeaSparkle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -641,7 +697,7 @@
 				DEVELOPMENT_TEAM = 66D3CJTRN4;
 				INFOPLIST_FILE = LightWonder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.nasa.LightWonder;
+				PRODUCT_BUNDLE_IDENTIFIER = org.lightwonder.SeaSparkle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

@@ -11,6 +11,9 @@ target 'LightWonder' do
   pod 'SwiftIconFont'
   pod 'IQKeyboardManagerSwift'
   pod 'Charts'
+  pod 'SideMenu'
+  pod 'Floaty'
+  pod 'Hero'
   
   # Pods for Common utils
   pod 'Alamofire'
