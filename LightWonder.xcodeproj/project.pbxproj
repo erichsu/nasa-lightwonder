@@ -27,6 +27,7 @@
 		27D3948F1EB542A3005A228A /* Search.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D3948E1EB542A3005A228A /* Search.xcassets */; };
 		27D394911EB558FB005A228A /* DetailCardAlgae.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27D394901EB558FB005A228A /* DetailCardAlgae.xib */; };
 		27D394931EB5593C005A228A /* DetailCardUV.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27D394921EB5593C005A228A /* DetailCardUV.xib */; };
+		27D394951EB59E29005A228A /* MarsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D394941EB59E29005A228A /* MarsMapViewController.swift */; };
 		8AE396272AFCB2E0BB9942E4 /* Pods_LightWonderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A815E05ECC9FB9312D6CB44 /* Pods_LightWonderTests.framework */; };
 		E73E003D3D7127761A28C2C2 /* Pods_LightWonderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429CC5718C19018F0A500905 /* Pods_LightWonderUITests.framework */; };
 		F501344D019D2F7CD4BAC61B /* Pods_LightWonder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52747A665F6EB56CDF0102BA /* Pods_LightWonder.framework */; };
@@ -79,6 +80,7 @@
 		27D3948E1EB542A3005A228A /* Search.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Search.xcassets; sourceTree = "<group>"; };
 		27D394901EB558FB005A228A /* DetailCardAlgae.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailCardAlgae.xib; sourceTree = "<group>"; };
 		27D394921EB5593C005A228A /* DetailCardUV.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailCardUV.xib; path = Views/DetailCardUV.xib; sourceTree = "<group>"; };
+		27D394941EB59E29005A228A /* MarsMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarsMapViewController.swift; sourceTree = "<group>"; };
 		2A815E05ECC9FB9312D6CB44 /* Pods_LightWonderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightWonderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		429CC5718C19018F0A500905 /* Pods_LightWonderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightWonderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52747A665F6EB56CDF0102BA /* Pods_LightWonder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightWonder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +149,7 @@
 				27AFDD5D1EB2454E00CCFD1C /* AppDelegate.swift */,
 				27AFDD5F1EB2454E00CCFD1C /* ViewController.swift */,
 				27D394801EB4C6F7005A228A /* InfoViewController.swift */,
+				27D394941EB59E29005A228A /* MarsMapViewController.swift */,
 				27AFDD611EB2454E00CCFD1C /* Main.storyboard */,
 				27AFDD641EB2454E00CCFD1C /* Assets.xcassets */,
 				27D3947B1EB44F65005A228A /* Weather.xcassets */,
@@ -523,6 +526,7 @@
 				27AFDD601EB2454E00CCFD1C /* ViewController.swift in Sources */,
 				27D394851EB4F200005A228A /* InfoCardCell.swift in Sources */,
 				27D394811EB4C6F7005A228A /* InfoViewController.swift in Sources */,
+				27D394951EB59E29005A228A /* MarsMapViewController.swift in Sources */,
 				27AFDD5E1EB2454E00CCFD1C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

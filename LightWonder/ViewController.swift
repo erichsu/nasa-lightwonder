@@ -399,25 +399,26 @@ extension ViewController: UITableViewDataSource, UIGestureRecognizerDelegate {
         print("Tapped Mars")
         searchController.searchResultsController?.dismiss(animated: true, completion: { 
             self.search.isHidden = true
-            self.mapView.isHidden = true
-            
-            self.currentLocation = self.beachLocations.count - 1
-            XCGLogger.debug("goto MARS \(self.currentLocation)")
-            
-            let beach = self.beachLocations[self.currentLocation]
-            if let subtitle = beach["subtitle"] as? String,
-                let temperature = beach["temperature"] as? String,
-                let wave = beach["wave"] as? String,
-                let humidity = beach["humidity"] as? String {
-                
-                self.temperatureLabel.text = temperature
-                self.humidityLabel.text = humidity
-                self.waveLabel.text = wave
-                self.beachLabel.text = "\(subtitle)"
-                self.cover.backgroundColor = UIColor(colorLiteralRed: 16/255.0, green: 37/255.0, blue: 63/255.0, alpha: 1.0)
-                
- 
-            }
+            self.performSegue(withIdentifier: "gotoMars", sender: self)
+//            self.mapView.isHidden = true
+//            
+//            self.currentLocation = self.beachLocations.count - 1
+//            XCGLogger.debug("goto MARS \(self.currentLocation)")
+//            
+//            let beach = self.beachLocations[self.currentLocation]
+//            if let subtitle = beach["subtitle"] as? String,
+//                let temperature = beach["temperature"] as? String,
+//                let wave = beach["wave"] as? String,
+//                let humidity = beach["humidity"] as? String {
+//                
+//                self.temperatureLabel.text = temperature
+//                self.humidityLabel.text = humidity
+//                self.waveLabel.text = wave
+//                self.beachLabel.text = "\(subtitle)"
+//                self.cover.backgroundColor = UIColor(colorLiteralRed: 16/255.0, green: 37/255.0, blue: 63/255.0, alpha: 1.0)
+//                
+// 
+//            }
             
         })
     }

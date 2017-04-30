@@ -137,7 +137,6 @@ extension InfoViewController: UICollectionViewDelegate {
         
         UIView.transition(from: from, to: to, duration: 0.3, options: [.curveEaseInOut, .transitionFlipFromLeft]) { res in
             self.currentDetail = to
-//            to.frame = collectionView.frame
             self.view.addSubview(to)
             self.collectionView.reloadData()
         }

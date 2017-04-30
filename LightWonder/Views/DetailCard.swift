@@ -9,35 +9,52 @@
 import UIKit
 
 enum DetailCardStyle: String {
-    case algae = "DetailCardAlgae"
-    case sun = "DetailCardUV"
+    case algae, sun, normal
 }
 
 class DetailCard: UIView {
 
+    var style: DetailCardStyle = .normal
+    var img = "algea_02"
+    var nibName = "DetailCard"
+    @IBOutlet weak var icon: UIImageView!
     
     init(_ style: DetailCardStyle, frame: CGRect) {
         super.init(frame: frame)
-        loadViewFromNib(style.rawValue)
+        self.style = style
+        switch style {
+        case .algae:
+            nibName = "DetailCardAlgae"
+            img = "algea_02"
+            break
+        case .sun:
+            nibName = "DetailCardUV"
+            img = "temp_02"
+            break
+        default:
+            break
+        }
+        loadViewFromNib()
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        loadViewFromNib(nil)
+        loadViewFromNib()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        loadViewFromNib(nil)
+        loadViewFromNib()
     }
     
-    func loadViewFromNib(_ nibName: String?) {
+    func loadViewFromNib() {
         let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: nibName ?? "DetailCard", bundle: bundle)
+        let nib = UINib(nibName: nibName, bundle: bundle)
         let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         view.frame = bounds
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.addSubview(view)
+        icon.image = UIImage(named: img)?.withRenderingMode(.alwaysTemplate)
     }
     /*
     // Only override draw() if you perform custom drawing.
